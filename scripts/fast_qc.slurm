@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-#SBATCH --job-name="QC_RNA_SHA_1_sample"
-#SBATCH --output=/data/users/rbharatia/Genome_transcriptome_assembly/results/quality_control/qc_%j.out
-#SBATCH --error=/data/users/rbharatia/Genome_transcriptome_assembly/logs/quality_control/qc_%j.err
+#SBATCH --job-name="FastQC"
+#SBATCH --output=/data/users/ekrasniqi/assembly_annotation_course/results/fast_qc/qc_%j.out
+#SBATCH --error=/data/users/ekrasniqi/assembly_annotation_course/logs/fast_qc/qc_%j.err
 #SBATCH --time=01:00:00
 #SBATCH --mem=10G
 #SBATCH --cpus-per-task=4
 #SBATCH --partition=pshort_el8
-#SBATCH --mail-user=rohit.bharatia@students.unibe.ch
+#SBATCH --mail-user=edrine.krasniqi@students.unibe.ch
 #SBATCH --mail-type=end
 
 #alternate partion used for process as pibu_el8 was overloaded.
@@ -16,8 +16,8 @@
 
 #Set paths
 CONTAINER="/containers/apptainer/fastqc-0.12.1.sif"
-INPUT_DIR="/data/users/rbharatia/Genome_transcriptome_assembly/data/RNAseq_Sha"
-OUTPUT_DIR="/data/users/rbharatia/Genome_transcriptome_assembly/results/quality_control"
+INPUT_DIR="/data/users/ekrasniqi/assembly_annotation_course/Est-0"
+OUTPUT_DIR="/data/users/ekrasniqi/assembly_annotation_course/results/fast_qc"
 
 
 #Run FastQC using Apptainer Container
