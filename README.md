@@ -11,7 +11,7 @@ Data:
 The data was provided through the course data directory. My assigned accession is Est-0
 
 Files:
-
+```text
 assembly_annotation_course/
 ├── Est-0/
 ├── RNAseq_Sha/
@@ -21,6 +21,6 @@ assembly_annotation_course/
 ├── scripts/
 ├── .gitignore
 └── README.md
-
+````
 
 
